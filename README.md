@@ -1,27 +1,42 @@
-## Hi there 👋
-💫 About Me:
-🔭 I’m focused on building scalable, high-performance web applications using React, Next.js, and TypeScript. My current projects emphasize creating responsive and intuitive user interfaces while implementing best practices in modern frontend development. I’m also exploring ways to enhance performance through server-side rendering (SSR) and static site generation (SSG) with Next.js.
-👯 I’m eager to collaborate on frontend projects that involve React, Next.js, or TypeScript, especially those focused on building reusable component libraries or improving user experience through advanced UI/UX techniques. I’m also open to contributing to open-source projects or teams where I can bring my expertise in modern JavaScript frameworks and learn from others.
-🌱 I’m diving deep into animations using libraries like Framer Motion and GSAP to create engaging, dynamic web experiences. I’m also expanding my knowledge in server-side rendering (SSR) with Next.js to build faster and more optimized web applications. Additionally, I’m exploring backend services like Supabase and Firebase for integrating seamless authentication, databases, and real-time data in my projects. Finally, I’m delving into testing tools like Jest and Cypress to ensure my applications are reliable and maintainable.
-💬 I love talking about anything related to React, Next.js, and TypeScript! Whether it’s about building component-based architectures, optimizing performance with SSR, or handling global state in large applications, I’m always happy to share my experiences and insights. I’m also passionate about UI design systems, component libraries, and improving user experience through responsive, accessible design.
-⚡ Fun fact: I transitioned into tech after studying something completely different! It wasn’t an easy journey, but learning front-end development turned out to be both challenging and fun. Now, I’m constantly experimenting with new libraries and frameworks to keep learning and growing.
+# 💫 About Me
 
-🌐 Socials:
-LinkedIn X email
+🔭 **Focused on:**  
+Building **scalable**, **high-performance** web applications using **React**, **Next.js**, and **TypeScript**. My projects emphasize creating **responsive** and **intuitive user interfaces** while implementing best practices in modern frontend development. I’m also exploring ways to enhance performance through **Server-Side Rendering (SSR)** and **Static Site Generation (SSG)** with Next.js.
 
-💻 Tech Stack:
-CSS3 JavaScript HTML5 TypeScript Netlify Vercel React TailwindCSS Next JS
-<!--
-**bMeen/bMeen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+👯 **Open to collaboration on:**  
+Frontend projects involving **React**, **Next.js**, or **TypeScript**. I’m especially excited about building **reusable component libraries** or improving user experiences with **advanced UI/UX techniques**. I’m also open to contributing to **open-source projects** or teams where I can bring my expertise in modern JavaScript frameworks and learn from others.
 
-Here are some ideas to get you started:
+🌱 **Currently learning:**  
+- Creating dynamic animations using libraries like **Framer Motion** and **GSAP**.  
+- Deepening my knowledge in **SSR** with **Next.js** for faster and more optimized web apps.  
+- Exploring **Supabase** and **Firebase** for seamless authentication, databases, and real-time data integration.  
+- Delving into testing with **Jest** and **Cypress** to ensure applications are **reliable** and **maintainable**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+💬 **Let’s chat about:**  
+I love talking about anything related to **React**, **Next.js**, and **TypeScript**! Whether it’s about **component-based architectures**, **performance optimization** with SSR, or managing **global state** in large applications, I’m happy to share my insights. I’m also passionate about **UI design systems**, **component libraries**, and improving UX with **responsive, accessible design**.
+
+⚡ **Fun fact:**  
+I transitioned into tech after studying something completely different! It wasn’t an easy journey, but learning **front-end development** turned out to be both **challenging** and **fun**. Now, I’m constantly experimenting with new libraries and frameworks to keep learning and growing.
+
+---
+
+## 🌐 Connect with Me:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-linkedin)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:youremail@example.com)
+
+---
+
+## 💻 Tech Stack:
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)  
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)  
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=%2326C0C7)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+
+---
+
+Thanks for stopping by! 🚀 Feel free to check out my projects or reach out for collaboration!
