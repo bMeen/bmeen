@@ -15,14 +15,11 @@ Frontend projects involving **React**, **Next.js**, or **TypeScript**. I’m esp
 💬 **Let’s chat about:**  
 I love talking about anything related to **React**, **Next.js**, and **TypeScript**! Whether it’s about **component-based architectures**, **performance optimization** with SSR, or managing **global state** in large applications, I’m happy to share my insights. I’m also passionate about **UI design systems**, **component libraries**, and improving UX with **responsive, accessible design**.
 
-⚡ **Fun fact:**  
-I transitioned into tech after studying something completely different! It wasn’t an easy journey, but learning **front-end development** turned out to be both **challenging** and **fun**. Now, I’m constantly experimenting with new libraries and frameworks to keep learning and growing.
-
 ---
 
 ## 🌐 Connect with Me:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-linkedin)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:youremail@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bmeen/)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:belloalameenn@outlook.com)
 
 ---
 
