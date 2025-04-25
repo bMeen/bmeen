@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./_components/Header";
 
 const jetBrainsMono = JetBrains_Mono({
   weight: ["400"],
@@ -9,7 +10,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "bMeen",
+  title: "bMeen | Frontend Developer",
   description: "Bello Al-Ameen: FrontEnd Developer",
 };
 
@@ -23,7 +24,10 @@ export default function RootLayout({
       <body
         className={`${jetBrainsMono.className} antialiased bg-background text-text`}
       >
-        {children}
+        <div className="max-w-screen-2xl mx-auto px-4">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
