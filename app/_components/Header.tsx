@@ -5,6 +5,7 @@ import Logo from "./Logo";
 import { useState } from "react";
 import Link from "next/link";
 import Button from "./Button";
+import { usePathname } from "next/navigation";
 
 const links: { name: string; href: string }[] = [
   { name: "Resume", href: "/resume" },
@@ -13,12 +14,13 @@ const links: { name: string; href: string }[] = [
 ];
 
 function Header() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen((open) => !open);
 
   return (
-    <div className="py-6 flex justify-between items-center w-full">
+    <div className="py-4 md:py-6 flex justify-between items-center w-full">
       <Logo />
 
       <Button className="p-2 lg:hidden" onClick={toggle}>
@@ -28,9 +30,18 @@ function Header() {
       <nav className="hidden lg:block">
         <ul className="lg:flex divide-x-2 divide-text-primary ">
           {links.map(({ name, href }, index) => (
-            <Link href={href} key={index}>
-              <li className="hover:text-orange mx-4">{name}</li>
-            </Link>
+            <li key={index}>
+              <Link
+                href={href}
+                className={`mx-4 ${
+                  pathname === href
+                    ? "text-orange-secondary"
+                    : "hover:text-orange-secondary"
+                }`}
+              >
+                {name}
+              </Link>
+            </li>
           ))}
         </ul>
       </nav>
@@ -47,11 +58,18 @@ function Header() {
       >
         <ul className="px-4 md:text-center flex flex-col gap-3 mb-4">
           {links.map(({ name, href }, index) => (
-            <Link href={href} key={index}>
-              <li className="text-base" onClick={toggle}>
+            <li key={index} onClick={toggle}>
+              <Link
+                href={href}
+                className={` ${
+                  pathname === href
+                    ? "text-secondary-orange"
+                    : "hover:text-secondary-orange"
+                }`}
+              >
                 {name}
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
         </ul>
       </nav>

@@ -10,7 +10,10 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "bMeen | Frontend Developer",
+  title: {
+    template: "%s | bMeen",
+    default: "bMeen | Frontend Developer",
+  },
   description: "Bello Al-Ameen: FrontEnd Developer",
 };
 
