@@ -20,7 +20,7 @@ function Header() {
   const toggle = () => setIsOpen((open) => !open);
 
   return (
-    <div className="py-4 md:py-6 flex justify-between items-center w-full">
+    <div className="py-4 lg:py-6 flex relative justify-between items-center w-full border-b">
       <Logo />
 
       <Button className="p-2 lg:hidden" onClick={toggle}>
@@ -52,11 +52,11 @@ function Header() {
       </Button>
 
       <nav
-        className={`lg:hidden absolute top-[91px]  transform transition-transform duration-700 ease-in-out left-0 z-30 w-full bg-gray py-4  ${
-          isOpen ? "translate-y-0" : "-translate-y-[calc(100%+91px)]"
+        className={`lg:hidden absolute top-[73px]  transform transition-transform duration-700 ease-in-out left-0 z-30 w-full bg-gray py-4  ${
+          isOpen ? "translate-y-0" : "-translate-y-[calc(100%+73px)]"
         }`}
       >
-        <ul className="px-4 md:text-center flex flex-col gap-3 mb-4">
+        <ul className="px-4 md:text-center flex flex-col gap-3">
           {links.map(({ name, href }, index) => (
             <li key={index} onClick={toggle}>
               <Link

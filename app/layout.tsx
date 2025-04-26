@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 const jetBrainsMono = JetBrains_Mono({
   weight: ["400"],
@@ -29,7 +30,8 @@ export default function RootLayout({
       >
         <div className="max-w-screen-2xl mx-auto px-4">
           <Header />
-          {children}
+          <main className="min-h-[calc(100vh-73px)]">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
