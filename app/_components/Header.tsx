@@ -61,10 +61,10 @@ function Header() {
             <li key={index} onClick={toggle}>
               <Link
                 href={href}
-                className={` ${
+                className={`${
                   pathname === href
-                    ? "text-secondary-orange"
-                    : "hover:text-secondary-orange"
+                    ? "text-orange-secondary"
+                    : "hover:text-orange-secondary"
                 }`}
               >
                 {name}

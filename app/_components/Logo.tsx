@@ -8,7 +8,7 @@ function Logo() {
         <h1 className="text-2xl">bMeen</h1>
       </div>
 
-      <span className="hidden lg:block   text-sm"> / Frontend Developer</span>
+      <span className="hidden lg:block text-sm"> / Frontend Developer</span>
     </Link>
   );
 }

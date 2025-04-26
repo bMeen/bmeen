@@ -5,7 +5,7 @@ import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 
 const jetBrainsMono = JetBrains_Mono({
-  weight: ["400"],
+  weight: ["200", "400"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -30,7 +30,9 @@ export default function RootLayout({
       >
         <div className="max-w-screen-2xl mx-auto px-4">
           <Header />
-          <main className="min-h-[calc(100vh-73px)]">{children}</main>
+          <main className="border my-14 min-h-[calc(100vh-73px)] grid place-items-center">
+            {children}
+          </main>
           <Footer />
         </div>
       </body>

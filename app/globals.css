@@ -18,6 +18,12 @@
   /* --mast-light-orange: #f89d3f; */
 }
 
+@layer base {
+  p {
+    @apply text-sm md:text-base;
+  }
+}
+
 /* 
 #B0A77D
 #4CA78A
