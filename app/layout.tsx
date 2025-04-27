@@ -30,12 +30,14 @@ export default function RootLayout({
       >
         <div className="max-w-screen-2xl mx-auto px-4">
           <Header />
-          <main className="border my-14 min-h-[calc(100vh-73px)] grid place-items-center">
-            {children}
-          </main>
+          <main className="my-14">{children}</main>
           <Footer />
         </div>
       </body>
     </html>
   );
 }
+
+/* 
+lg:min-h-[calc(100vh-73px)] lg:grid lg:place-items-center"
+*/

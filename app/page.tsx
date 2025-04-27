@@ -5,33 +5,39 @@ import Container from "./_components/Container";
 function Page() {
   return (
     <Container>
-      <div className="grid md:grid-cols-2 items-center">
-        <div className=" space-y-4 py-6">
-          <div className="w-28 h-28 md:w-40 md:h-40 rounded-full bg-white/50 mx-auto  lg:w-52 lg:h-52"></div>
+      <div className="grid lg:grid-cols-2 gap-6  items-center py-6">
+        <div className="space-y-4">
+          <div className="w-28 h-28 md:w-40 md:h-40 rounded-full bg-white/30 mx-auto  lg:w-52 lg:h-52"></div>
           <h1 className="text-center text-lg lg:text-3xl uppercase">
-            Bello <br /> Al-Ameen
+            Bello Al-Ameen
           </h1>
           <p className="uppercase font-extralight tracking-[5px] text-center">
             Frontend Developer
           </p>
           <div className="flex gap-4 justify-center mt-4">
-            <Button className=" px-4 py-2">
+            <Button className="text-sm px-2 py-1  md:px-4 md:py-2 md:text-base">
               <Link href="/resume">Resume</Link>
             </Button>
-            <Button className=" px-4 py-2">
+            <Button className="text-sm px-3 py-1 md:px-4 md:py-2 md:text-base">
               <Link href="/projects">Projects</Link>
             </Button>
           </div>
         </div>
 
-        <div className="px-4 py-6">
+        <div className="space-y-4">
           <h1 className="text-lg lg:text-3xl uppercase">Hello!</h1>
           <p className="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            sequi aspernatur hic velit doloremque. Facere repellendus modi quia
-            nesciunt magni, eius ipsam necessitatibus eligendi aspernatur rerum
-            itaque sapiente explicabo nostrum voluptatem, maiores tempore! In
-            repellat omnis id architecto aut praesentium ipsam ducimus eaque
+            I&apos;m a passionate Frontend Developer focused on building fast,
+            responsive, and user-friendly web applications. I specialize in
+            creating clean, intuitive designs while continuously expanding my
+            knowledge of modern frontend technologies like React, Next.js, and
+            TypeScript. I&apos;m currently seeking entry-level opportunities
+            where I can apply my skills, grow professionally, and contribute
+            meaningfully to projects. As a creative problem-solver with a strong
+            attention to detail, I am committed to delivering high-quality
+            solutions that enhance user experience and add real value. I&apos;m
+            excited to collaborate with teams, learn from new challenges, and
+            bring innovative ideas to life through my work.
           </p>
         </div>
       </div>
