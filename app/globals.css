@@ -19,6 +19,16 @@
 }
 
 @layer base {
+  body {
+    @apply font-mono;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-sans font-bold;
+  }
+
   p {
     @apply text-sm md:text-base;
   }

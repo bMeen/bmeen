@@ -19,6 +19,10 @@ const config: Config = {
         blue: "var(--blue)",
         "blue-secondary": "var(--secondary-blue)",
       },
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+        mono: ["var(--font-mono)"],
+      },
     },
   },
   plugins: [],

@@ -8,7 +8,7 @@ function Page() {
       <div className="grid lg:grid-cols-2 gap-6  items-center py-6">
         <div className="space-y-4">
           <div className="w-28 h-28 md:w-40 md:h-40 rounded-full bg-white/30 mx-auto  lg:w-52 lg:h-52"></div>
-          <h1 className="text-center text-lg lg:text-3xl uppercase">
+          <h1 className="text-center text-xl lg:text-3xl uppercase">
             Bello Al-Ameen
           </h1>
           <p className="uppercase font-extralight tracking-[5px] text-center">
@@ -25,7 +25,7 @@ function Page() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="text-lg lg:text-3xl uppercase">Hello!</h1>
+          <h1 className="text-xl lg:text-3xl uppercase">Hello!</h1>
           <p className="text-justify">
             I&apos;m a passionate Frontend Developer focused on building fast,
             responsive, and user-friendly web applications. I specialize in
