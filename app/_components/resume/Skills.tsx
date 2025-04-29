@@ -12,7 +12,6 @@ const skills = [
   "Vue.js",
   "Nuxt.js",
   "Framer Motion",
-  "Supabase",
 ];
 
 function Skills() {
