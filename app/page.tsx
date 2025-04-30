@@ -6,21 +6,22 @@ function Page() {
   return (
     <Container>
       <div className="grid lg:grid-cols-2 gap-6  items-center py-6">
-        <div className="space-y-4">
-          <div className="w-28 h-28 md:w-40 md:h-40 rounded-full bg-white/30 mx-auto  lg:w-52 lg:h-52"></div>
-          <h1 className="text-center text-xl lg:text-3xl uppercase">
-            Bello Al-Ameen
-          </h1>
-          <p className="uppercase font-extralight tracking-[5px] text-center">
-            Frontend Developer
-          </p>
-          <div className="flex gap-4 justify-center mt-4">
-            <Button className="text-sm px-2 py-1  md:px-4 md:py-2 md:text-base">
-              <Link href="/resume">Resume</Link>
-            </Button>
-            <Button className="text-sm px-3 py-1 md:px-4 md:py-2 md:text-base">
-              <Link href="/projects">Projects</Link>
-            </Button>
+        <div className="space-y-4 border py-10 lg:py-0 lg:h-full lg:grid lg:place-items-center">
+          <div>
+            <h1 className="text-center text-xl lg:text-3xl uppercase">
+              Bello Al-Ameen
+            </h1>
+            <p className="uppercase font-extralight tracking-[5px] text-center">
+              Frontend Developer
+            </p>
+            <div className="flex gap-4 justify-center mt-4">
+              <Button className="text-sm px-2 py-1  md:px-4 md:py-2 md:text-base">
+                <Link href="/resume">Resume</Link>
+              </Button>
+              <Button className="text-sm px-3 py-1 md:px-4 md:py-2 md:text-base">
+                <Link href="/projects">Projects</Link>
+              </Button>
+            </div>
           </div>
         </div>
 

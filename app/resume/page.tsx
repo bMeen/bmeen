@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 function Page() {
   return (
     <Container>
-      <h1 className="text-2xl lg:text-5xl mb-5 lg:mb-14 ">Resume</h1>
+      <h1 className="text-2xl lg:text-5xl mb-5 lg:mb-14">Resume</h1>
       <Experience />
       <Skills />
     </Container>

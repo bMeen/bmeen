@@ -28,7 +28,7 @@ function Header() {
       </Button>
 
       <nav className="hidden lg:block">
-        <ul className="lg:flex divide-x-2 divide-text-primary ">
+        <ul className="lg:flex divide-x-2 divide-text-primary">
           {links.map(({ name, href }, index) => (
             <li key={index}>
               <Link

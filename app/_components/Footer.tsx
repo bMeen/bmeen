@@ -6,7 +6,7 @@ function Footer() {
     <div className="py-4 lg:py-6 border-t">
       <ul className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
         <li>
-          <p>Connect With Me</p>
+          <p>Connect</p>
           <div className="flex gap-2 mt-1">
             <Link href="https://www.linkedin.com/in/bmeen/" target="_blank">
               <FaLinkedin className="w-7 h-7" />

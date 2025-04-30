@@ -1,8 +1,30 @@
+import { experiences } from "./experirnces";
+
 function Experience() {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-[500px_1fr] gap-2 mb-10 lg:mb-20">
       <h2 className="text-lg lg:text-2xl">Work Experience</h2>
-      <div className="space-y-6 lg:space-y-10 ">
+      <div className="space-y-6 lg:space-y-10">
+        {experiences.map((experience, index) => (
+          <div className="grid lg:grid-cols-[200px_1fr] lg:gap-6" key={index}>
+            <p className="">{experience.duration}</p>
+            <div className=" lg:space-y-1">
+              <h3 className="text-base lg:text-lg">
+                {experience.company} - {experience.title}
+              </h3>
+              <p className="max-w-md lg:max-w-full">{experience.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Experience;
+
+/* 
+     <div className="space-y-6 lg:space-y-10 ">
         <div className="grid lg:grid-cols-[200px_1fr] lg:gap-6">
           <p className="">Feb 2025 - Present</p>
           <div className=" lg:space-y-1">
@@ -18,9 +40,6 @@ function Experience() {
             </p>
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
+      </div> 
 
-export default Experience;
+*/

@@ -7,10 +7,10 @@ const skills = [
   "Git",
   "Tailwind CSS",
   "React",
-  "Next.js",
+  "Nextjs",
   "TypeScript",
-  "Vue.js",
-  "Nuxt.js",
+  "Vuejs",
+  "Nuxtjs",
   "Framer Motion",
 ];
 
