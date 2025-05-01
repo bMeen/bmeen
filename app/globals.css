@@ -18,6 +18,11 @@
   /* --mast-light-orange: #f89d3f; */
 }
 
+input:-webkit-autofill {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: #eeebdd !important; /* Optional: control text color */
+}
+
 @layer base {
   body {
     @apply font-mono;
@@ -29,8 +34,28 @@
     @apply font-sans font-bold;
   }
 
-  p {
+  p,
+  label {
     @apply text-sm md:text-base;
+  }
+
+  label,
+  input,
+  textarea {
+    @apply w-full block;
+  }
+
+  input,
+  textarea {
+    @apply my-1 bg-background border-gray-secondary border-[2px] focus:outline-none focus:ring-0 px-3 py-3 text-xs md:text-sm;
+  }
+
+  textarea {
+    @apply min-h-[129px];
+  }
+
+  form span {
+    @apply text-xs italic text-orange-secondary hidden;
   }
 }
 
