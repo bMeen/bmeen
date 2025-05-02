@@ -3,6 +3,7 @@ import { JetBrains_Mono, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const jetBrainsMono = JetBrains_Mono({
   weight: ["200", "400"],
@@ -38,11 +39,12 @@ export default function RootLayout({
       >
         <div className="max-w-screen-2xl mx-auto px-4">
           <Header />
-          <main className="my-14 lg:min-h-[calc(100vh-73px)] lg:grid lg:place-items-center">
+          <main className="my-10 lg:min-h-[calc(100vh-73px)] lg:grid lg:place-items-center">
             {children}
           </main>
           <Footer />
         </div>
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );

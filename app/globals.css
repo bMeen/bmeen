@@ -55,7 +55,7 @@ input:-webkit-autofill {
   }
 
   form span {
-    @apply text-xs italic text-orange-secondary hidden;
+    @apply text-xs italic text-orange-secondary;
   }
 }
 
