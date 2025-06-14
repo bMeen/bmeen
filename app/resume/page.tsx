@@ -3,6 +3,7 @@ import Container from "../_components/Container";
 import Experience from "../_components/resume/Experience";
 import Skills from "../_components/resume/Skills";
 
+
 export const metadata: Metadata = {
   title: "Resume",
 };
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
 function Page() {
   return (
     <Container>
-      <h1 className="text-2xl lg:text-5xl mb-5 lg:mb-14">Resume</h1>
+      <h1 className="text-2xl mb-5 lg:mb-14 lg:text-5xl">Resume</h1>
+
       <Experience />
       <Skills />
     </Container>

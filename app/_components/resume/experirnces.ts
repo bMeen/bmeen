@@ -7,7 +7,7 @@ export type ExperienceType = {
 
 export const experiences: ExperienceType[] = [
   {
-    duration: "Feb 2025 - Present",
+    duration: "Feb 2025",
     title: "Frontend Intern",
     company: "SparkXplorer",
     description:

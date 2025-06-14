@@ -7,6 +7,7 @@ import { format } from "date-fns";
 import emailjs from "@emailjs/browser";
 import { Loader2 } from "lucide-react";
 import toast from "react-hot-toast";
+import { motion } from "motion/react";
 
 const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
@@ -91,10 +92,14 @@ function Form() {
         </div>
       </div>
 
-      <button className="p-4 w-full rounded-full mt-5 bg-orange-secondary flex justify-center items-center gap-2">
+      <motion.button
+        transition={{ type: "tween", duration: 0.2 }}
+        whileTap={{ scale: 0.85 }}
+        className="p-4 w-full rounded-full mt-5 bg-orange-secondary flex justify-center items-center gap-2"
+      >
         {isSubmitting && <Loader2 className="animate-spin" />}
         Submit
-      </button>
+      </motion.button>
     </form>
   );
 }

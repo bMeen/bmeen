@@ -1,17 +1,14 @@
 import Tag from "../Tag";
 
 const skills = [
-  "HTML",
-  "CSS",
+  "HTML & CSS",
   "JavaScript",
-  "Git",
-  "Tailwind CSS",
+  "TypeScript",
+  "Tailwind-CSS",
   "React",
   "Nextjs",
-  "TypeScript",
-  "Vuejs",
-  "Nuxtjs",
   "Framer Motion",
+  "Git",
 ];
 
 function Skills() {

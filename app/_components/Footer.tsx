@@ -1,9 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { motion } from "motion/react";
 
 function Footer() {
   return (
-    <div className="py-4 lg:py-6 border-t">
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="py-4 lg:py-6 border-t"
+    >
       <ul className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
         <li>
           <p>Connect</p>
@@ -35,7 +43,7 @@ function Footer() {
           </Link>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 }
 

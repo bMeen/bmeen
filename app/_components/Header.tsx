@@ -6,6 +6,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Button from "./Button";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
 
 const links: { name: string; href: string }[] = [
   { name: "Resume", href: "/resume" },
@@ -20,7 +21,12 @@ function Header() {
   const toggle = () => setIsOpen((open) => !open);
 
   return (
-    <div className="py-4 lg:py-6 flex relative justify-between items-center w-full border-b">
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="py-4 lg:py-6 flex relative justify-between items-center w-full border-b"
+    >
       <Logo />
 
       <Button className="p-2 lg:hidden" onClick={toggle}>
@@ -71,10 +77,17 @@ function Header() {
               </Link>
             </li>
           ))}
+          <li onClick={toggle}>
+            <a>
+               Download Resume
+            </a>
+          </li>
         </ul>
       </nav>
-    </div>
+    </motion.div>
   );
 }
 
 export default Header;
+
+//73

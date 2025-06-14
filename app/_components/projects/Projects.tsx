@@ -1,26 +1,33 @@
+"use client";
 import Link from "next/link";
 import Tag from "../Tag";
 import { ArrowUpRight } from "lucide-react";
 import { projects } from "./project";
 import Image from "next/image";
+import { motion } from "motion/react";
+import Tilt from "./Tilt";
 
 function Projects() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
       {projects.map((project, index) => (
-        <div
-          className="border-gray-secondary border-[1px] p-4 lg:p-6 rounded space-y-5"
+        <Tilt
+          className="bg-white/5 backdrop-blur-[80px] border shadow-[0_15px_30px_rgba(0,0,0,0.25)] border-white/10 p-4 lg:p-6 rounded space-y-5 flex flex-col"
           key={index}
         >
-          <Image
-            src={project.image}
-            alt={project.title}
-            placeholder="blur"
-            className="rounded"
-          />
           <div>
-            <h2 className="text-lg lg:text-2xl">{project.title}</h2>
-            <p className="text-sm lg:text-sm">{project.description}</p>
+            <Image
+              src={project.image}
+              alt={project.title}
+              placeholder="blur"
+              className="rounded"
+            />
+          </div>
+          <div className="flex-1 flex flex-col justify-between">
+            <div>
+              <h2 className="text-lg lg:text-2xl">{project.title}</h2>
+              <p className="text-sm lg:text-sm">{project.description}</p>
+            </div>
             <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row lg:justify-between mt-1">
               <div>
                 <h3 className="text-base lg:text-lg mb-2">Tech Stack</h3>
@@ -33,16 +40,18 @@ function Projects() {
                 </ul>
               </div>
 
-              <Link
-                href={project.url}
-                target="_blank"
+              <motion.div
+                transition={{ type: "tween", duration: 0.2 }}
+                whileTap={{ scale: 0.85 }}
                 className="group bg-text p-2 hover:bg-white flex items-center justify-center rounded self-end"
               >
-                <ArrowUpRight className="text-orange transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </Link>
+                <Link href={project.url} target="_blank">
+                  <ArrowUpRight className="text-orange transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                </Link>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </Tilt>
       ))}
     </div>
   );
@@ -50,47 +59,4 @@ function Projects() {
 
 export default Projects;
 
-{
-  /* <div className="border-2 p-4 lg:p-6 rounded space-y-5">
-        <div className="w-full h-64 bg-white/10"></div>
-        <div>
-          <h2 className="text-lg lg:text-2xl">Venstphere</h2>
-          <p className="text-sm lg:text-sm">
-            A modern, responsive landing page built to showcase Venstphere, a
-            platform that supports startups by providing funding and strategic
-            guidance. The page highlights the company’s mission to empower
-            visionary entrepreneurs and was designed with a focus on clean UI,
-            intuitive navigation, and engaging content layout.
-          </p>
-          <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row lg:justify-between lg:items-end mt-1">
-            <div>
-              <h3 className="text-base lg:text-lg mb-2">Tech Stack</h3>
-              <ul className="flex gap-2 flex-wrap max-w-sm">
-                <li>
-                  <Tag>Nextjs</Tag>
-                </li>
-                <li>
-                  <Tag>Taiwindcss</Tag>
-                </li>
-                <li>
-                  <Tag>React Router</Tag>
-                </li>
-                <li>
-                  <Tag>React Query</Tag>
-                </li>
-                <li>
-                  <Tag>Firebase</Tag>
-                </li>
-              </ul>
-            </div>
-
-            <Link
-              href=""
-              className="group bg-text p-2 hover:bg-white flex items-center justify-center rounded self-end"
-            >
-              <ArrowUpRight className="text-orange transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </Link>
-          </div>
-        </div>
-      </div> */
-}
+/* border-gray-secondary border-[1px]  */

@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "motion/react";
+
 function Button({
   className,
   onClick,
@@ -8,12 +12,14 @@ function Button({
   children: React.ReactNode;
 }) {
   return (
-    <div
+    <motion.div
+      transition={{ type: "tween", duration: 0.2 }}
+      whileTap={{ scale: 0.85 }}
       className={`bg-gray hover:bg-orange rounded cursor-pointer ${className}`}
       onClick={onClick}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }
 
