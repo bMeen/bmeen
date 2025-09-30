@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 import venstphere from "../../../public/ventsphere.png";
 import classroomhq from "../../../public/classrooomhq.png";
+import rideXpress from "../../../public/rideXpress.png";
 
 export type Project = {
   title: string;
@@ -8,6 +9,7 @@ export type Project = {
   skills: string[];
   url: string;
   image: StaticImageData;
+  wip?: boolean;
 };
 
 export const projects: Project[] = [
@@ -26,5 +28,14 @@ export const projects: Project[] = [
     skills: ["React", "Tailwindcss", "Framer Motion", "Typescript"],
     url: "https://classroomhq.vercel.app/",
     image: classroomhq,
+  },
+  {
+    title: "RideXpress",
+    description:
+      "A web-based transport booking MVP designed to simplify how users browse available trips, reserve seats, and complete payments. The goal is to create a lightweight but scalable app for transport operators while practicing real-world product development.",
+    skills: ["Nextjs", "Tailwindcss", "Supabase", "Typescript", "Shadcn UI"],
+    url: "https://ridexpress-dun.vercel.app/",
+    image: rideXpress,
+    wip: true,
   },
 ];

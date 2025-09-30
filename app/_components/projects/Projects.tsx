@@ -5,13 +5,13 @@ import { ArrowUpRight } from "lucide-react";
 import { projects } from "./project";
 import Image from "next/image";
 import { motion } from "motion/react";
-import Tilt from "./Tilt";
+import Button from "../Button";
 
 function Projects() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
       {projects.map((project, index) => (
-        <Tilt
+        <div
           className="bg-white/5 backdrop-blur-[80px] border shadow-[0_15px_30px_rgba(0,0,0,0.25)] border-white/10 p-4 lg:p-6 rounded space-y-5 flex flex-col"
           key={index}
         >
@@ -25,7 +25,15 @@ function Projects() {
           </div>
           <div className="flex-1 flex flex-col justify-between">
             <div>
-              <h2 className="text-lg lg:text-2xl">{project.title}</h2>
+              <h2 className="text-lg lg:text-2xl">
+                {project.title}
+
+                {project.wip && (
+                  <Button className="ml-2 inline-flex text-sm px-1.5 tracking-widest bg-orange">
+                    WIP
+                  </Button>
+                )}
+              </h2>
               <p className="text-sm lg:text-sm">{project.description}</p>
             </div>
             <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row lg:justify-between mt-1">
@@ -51,7 +59,7 @@ function Projects() {
               </motion.div>
             </div>
           </div>
-        </Tilt>
+        </div>
       ))}
     </div>
   );
