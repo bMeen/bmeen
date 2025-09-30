@@ -54,7 +54,10 @@ function Header() {
 
       <Button className="gap-2 px-4 py-2 hidden lg:flex">
         <Download />
-        <a href="/myresume.pdf" download="Bello_Al_Ameen_Resume.pdf">
+        <a
+          href="/Bello_Al-Ameen_Resume.pdf"
+          download="Bello_Al_Ameen_Resume.pdf"
+        >
           <span>Download Resume</span>
         </a>
       </Button>
@@ -80,7 +83,10 @@ function Header() {
             </li>
           ))}
           <li onClick={toggle}>
-            <a href="/myresume.pdf" download="Bello_Al_Ameen_Resume.pdf">
+            <a
+              href="/Bello_Al-Ameen_Resume.pdf"
+              download="Bello_Al_Ameen_Resume.pdf"
+            >
               Download Resume
             </a>
           </li>
