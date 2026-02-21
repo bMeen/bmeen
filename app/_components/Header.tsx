@@ -55,8 +55,8 @@ function Header() {
       <Button className="gap-2 px-4 py-2 hidden lg:flex">
         <Download />
         <a
-          href="/Bello_Al-Ameen_Resume.pdf"
-          download="Bello_Al_Ameen_Resume.pdf"
+          href="https://drive.google.com/uc?export=download&id=1voG3gn3AsCkcG66aba0yVQZabuiTA-LQ"
+          download
         >
           <span>Download Resume</span>
         </a>
