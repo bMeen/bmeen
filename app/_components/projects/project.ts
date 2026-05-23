@@ -35,7 +35,6 @@ export const projects: Project[] = [
       "A seamless platform for booking intercity trips and renting vehicles in minutes.",
     skills: ["Nextjs", "Tailwindcss", "Supabase", "Typescript", "Shadcn UI"],
     url: "https://ridexpress-dun.vercel.app/",
-    image: rideXpress,
-    wip: true
+    image: rideXpress
   }
 ];

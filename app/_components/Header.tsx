@@ -11,7 +11,7 @@ import { motion } from "motion/react";
 const links: { name: string; href: string }[] = [
   { name: "Resume", href: "/resume" },
   { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "Contact", href: "/contact" }
 ];
 
 function Header() {
@@ -55,7 +55,7 @@ function Header() {
       <Button className="gap-2 px-4 py-2 hidden lg:flex">
         <Download />
         <a
-          href="https://drive.google.com/uc?export=download&id=1voG3gn3AsCkcG66aba0yVQZabuiTA-LQ"
+          href="https://drive.google.com/uc?export=download&id=1Ro_4WaRkygf4xRHFUm5uFSIHjj5LlgZQ"
           download
         >
           <span>Download Resume</span>
@@ -84,10 +84,10 @@ function Header() {
           ))}
           <li onClick={toggle}>
             <a
-              href="/Bello_Al-Ameen_Resume.pdf"
-              download="Bello_Al_Ameen_Resume.pdf"
+              href="https://drive.google.com/uc?export=download&id=1Ro_4WaRkygf4xRHFUm5uFSIHjj5LlgZQ"
+              download
             >
-              Download Resume
+              <span>Download Resume</span>
             </a>
           </li>
         </ul>
