@@ -10,8 +10,8 @@ function Tag({ children }: { children: React.ReactNode }) {
         transition: {
           type: "spring",
           stiffness: 300,
-          damping: 20,
-        },
+          damping: 20
+        }
       }}
       className="px-4 py-1 uppercase text-white bg-gray-secondary  rounded inline-block text-sm md:text-base cursor-pointer"
     >
